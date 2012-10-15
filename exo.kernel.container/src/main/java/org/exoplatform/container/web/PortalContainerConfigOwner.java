@@ -53,6 +53,6 @@ public class PortalContainerConfigOwner implements ServletContextListener
 
    public void contextDestroyed(ServletContextEvent event)
    {
-      PortalContainer.addInitTask(event.getServletContext(), new PortalContainer.UnregisterTask());
+      PortalContainer.addInitTask(event.getServletContext(), new PortalContainer.PostUnregisterTask());
    }
 }
